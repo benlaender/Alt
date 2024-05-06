@@ -18,6 +18,8 @@ import com.indvd00m.ascii.render.api.IContextBuilder;
 import com.indvd00m.ascii.render.api.IRender;
 import com.indvd00m.ascii.render.elements.PseudoText;
 
+import static org.fusesource.jansi.Ansi.*;
+
 public class App {
     private static PDFont HELVETICA;
 
@@ -27,6 +29,10 @@ public class App {
 
     public static void main(String[] args) {
 
+        //Jansi-Render
+        System.out.println(ansi().eraseScreen().render("@|red Bodtlben|@ @|green DevOps FS 2024|@") );
+
+        //Ascii
         IRender render = new Render();
 		IContextBuilder builder = render.newBuilder();
 		builder.width(120).height(13);
@@ -52,5 +58,7 @@ public class App {
 
         helloPdf.save(new File("/Users/benito/Desktop/simple.pdf"));
         helloPdf.close();*/
+
+        
     }
 }
