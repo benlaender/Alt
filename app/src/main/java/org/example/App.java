@@ -38,7 +38,7 @@ public class App {
         System.out.println(new App().getGreeting());
 
         // PDF Box
-        PDDocument helloPdf = new PDDocument();
+        /*PDDocument helloPdf = new PDDocument();
         PDPage page = new PDPage(PDRectangle.A4);
         helloPdf.addPage(page);
 
@@ -51,6 +51,6 @@ public class App {
         contentStream.close();
 
         helloPdf.save(new File("/Users/benito/Desktop/simple.pdf"));
-        helloPdf.close();
+        helloPdf.close();*/
     }
 }
